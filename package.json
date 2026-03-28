@@ -1,0 +1,38 @@
+{
+  "name": "getpronto-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Get Pronto image hosting and transformation",
+  "homepage": "https://www.getpronto.io",
+  "repository": "github:getpronto-io/getpronto-mcp",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "getpronto",
+    "image-hosting",
+    "image-transformation",
+    "ai-tools",
+    "claude"
+  ],
+  "main": "dist/index.js",
+  "bin": {
+    "getpronto-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepare": "npm run build"
+  },
+  "author": "getpronto.io",
+  "license": "ISC",
+  "dependencies": {
+    "getpronto-sdk": "^1.3.0",
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.2"
+  }
+}
