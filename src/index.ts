@@ -10,7 +10,7 @@ import { toolDefinitions, handleToolCall } from "./tools";
 const server = new Server(
   {
     name: "getpronto-mcp",
-    version: "1.0.1",
+    version: "1.0.2",
   },
   {
     capabilities: {

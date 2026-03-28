@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.getpronto-io/mcp",
-  "description": "MCP server for Get Pronto image hosting and transformation. Upload, transform, and manage images directly from AI agents like Claude Code and Cursor.",
-  "version": "1.0.1",
+  "name": "io.github.jaygould/getpronto",
+  "description": "Upload, transform, and manage images on Get Pronto from AI agents.",
+  "version": "1.0.2",
   "repository": {
     "url": "https://github.com/getpronto-io/getpronto-mcp",
     "source": "github"
@@ -11,7 +11,7 @@
     {
       "registryType": "npm",
       "identifier": "getpronto-mcp",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "transport": {
         "type": "stdio"
       },
