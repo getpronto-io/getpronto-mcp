@@ -1,34 +1,36 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.getpronto/mcp",
+  "name": "io.github.getpronto-io/mcp",
   "description": "MCP server for Get Pronto image hosting and transformation. Upload, transform, and manage images directly from AI agents like Claude Code and Cursor.",
-  "version": "1.0.0",
-  "title": "Get Pronto",
-  "websiteUrl": "https://www.getpronto.io",
+  "version": "1.0.1",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/getpronto-io/getpronto-mcp"
+    "url": "https://github.com/getpronto-io/getpronto-mcp",
+    "source": "github"
   },
   "packages": [
     {
       "registryType": "npm",
       "identifier": "getpronto-mcp",
-      "version": "1.0.0",
-      "transport": "stdio",
-      "runtimeHint": "npx",
-      "packageArguments": ["-y", "getpronto-mcp"]
-    }
-  ],
-  "environmentVariables": [
-    {
-      "name": "GETPRONTO_API_KEY",
-      "required": false,
-      "description": "Your Get Pronto secret API key. If omitted, use the generate_test_key tool to get an ephemeral key."
-    },
-    {
-      "name": "GETPRONTO_BASE_URL",
-      "required": false,
-      "description": "API base URL. Defaults to https://api.getpronto.io/v1"
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GETPRONTO_API_KEY",
+          "description": "Your Get Pronto secret API key. If omitted, use the generate_test_key tool to get an ephemeral key.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "GETPRONTO_BASE_URL",
+          "description": "API base URL. Defaults to https://api.getpronto.io/v1",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
     }
   ]
 }
